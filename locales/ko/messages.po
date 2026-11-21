@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/app/models.tsx:291
+#: src/app/models.tsx:305
 msgid "{recVariant} is recommended for your device."
 msgstr "{recVariant}이(가) 기기에 권장됩니다."
 
@@ -34,11 +34,15 @@ msgstr "앱 업데이트"
 msgid "Artist"
 msgstr "작가"
 
+#: src/components/content/settings.tsx:251
+msgid "Auto copy tags"
+msgstr "태그 자동 복사"
+
 #: src/components/content/settings.tsx:250
 msgid "Auto inference"
 msgstr "자동 추론"
 
-#: src/app/(dialogs)/config.tsx:110
+#: src/app/(dialogs)/config.tsx:109
 #: src/components/common/alert.android.tsx:38
 msgid "Cancel"
 msgstr "취소"
@@ -52,7 +56,7 @@ msgstr "카테고리"
 msgid "Change model"
 msgstr "모델 변경"
 
-#: src/app/models.tsx:261
+#: src/app/models.tsx:275
 msgid "Change model directory"
 msgstr "모델 디렉터리 변경"
 
@@ -84,10 +88,6 @@ msgstr "클립보드에 복사되었습니다"
 msgid "Copy"
 msgstr "복사"
 
-#: src/components/content/settings.tsx:251
-msgid "Copy tags to clipboard after inference"
-msgstr "추론이 끝나면 태그를 클립보드에 복사하세요"
-
 #: src/components/tagText.tsx:165
 msgid "Copy text"
 msgstr "텍스트 복사"
@@ -108,7 +108,7 @@ msgstr "다크 모드"
 msgid "Default"
 msgstr "기본값"
 
-#: src/app/models.tsx:191
+#: src/app/models.tsx:203
 msgid "Deselect"
 msgstr "선택 해제"
 
@@ -118,11 +118,11 @@ msgstr "선택 해제"
 msgid "Done"
 msgstr "완료"
 
-#: src/app/models.tsx:191
+#: src/app/models.tsx:203
 msgid "Download"
 msgstr "다운로드"
 
-#: src/utils/selector/index.tauri.ts:114
+#: src/utils/selector/index.tauri.ts:119
 msgid "Error loading URL"
 msgstr "URL을 로드하는 중 오류 발생"
 
@@ -215,8 +215,8 @@ msgid "Max General Tags"
 msgstr "최대 일반 태그 수"
 
 #: src/app/(dialogs)/config.native.tsx:76
-#: src/app/(dialogs)/config.tsx:67
-#: src/app/(dialogs)/config.tsx:120
+#: src/app/(dialogs)/config.tsx:66
+#: src/app/(dialogs)/config.tsx:119
 msgid "Max tags"
 msgstr "최대 태그 수"
 
@@ -233,8 +233,8 @@ msgid "Meta"
 msgstr "메타"
 
 #: src/app/(dialogs)/config.native.tsx:88
-#: src/app/(dialogs)/config.tsx:79
-#: src/app/(dialogs)/config.tsx:131
+#: src/app/(dialogs)/config.tsx:78
+#: src/app/(dialogs)/config.tsx:130
 msgid "Minimum thresholds"
 msgstr "최소 임계값"
 
@@ -250,7 +250,7 @@ msgstr "모델"
 msgid "Model is too large for this device."
 msgstr "모델이 이 기기에 너무 큽니다."
 
-#: src/app/models.tsx:249
+#: src/app/models.tsx:263
 msgid "Model Manager"
 msgstr "모델 관리자"
 
@@ -261,8 +261,8 @@ msgstr "모델을 찾을 수 없습니다!"
 
 #: src/app/(dialogs)/config.native.tsx:59
 #: src/app/(dialogs)/config.native.tsx:112
-#: src/app/(dialogs)/config.tsx:51
-#: src/app/(dialogs)/config.tsx:102
+#: src/app/(dialogs)/config.tsx:50
+#: src/app/(dialogs)/config.tsx:101
 msgid "Model Settings"
 msgstr "모델 설정"
 
@@ -272,7 +272,7 @@ msgstr "모델"
 
 #: src/components/content/settings.tsx:253
 msgid "Monitor clipboard for images"
-msgstr ""
+msgstr "클립보드에서 이미지 모니터링"
 
 #: src/hooks/translations/useThemeVariantNames.ts:12
 msgid "Monochrome"
@@ -290,7 +290,7 @@ msgstr "결과 없음"
 msgid "No update available"
 msgstr "사용 가능한 업데이트가 없습니다"
 
-#: src/app/models.tsx:272
+#: src/app/models.tsx:286
 msgid "Open model directory"
 msgstr "모델 디렉터리 열기"
 
@@ -307,7 +307,7 @@ msgstr "붙여넣기"
 msgid "Paste Image from Clipboard"
 msgstr "클립보드의 이미지 붙여넣기"
 
-#: src/app/models.tsx:256
+#: src/app/models.tsx:270
 msgid "Please download and select a model to get started!"
 msgstr "시작하려면 모델을 다운로드하고 선택해 주세요!"
 
@@ -323,7 +323,7 @@ msgstr "개인정보 처리방침"
 msgid "Probability"
 msgstr "확률"
 
-#: src/utils/selector/index.tauri.ts:123
+#: src/utils/selector/index.tauri.ts:128
 msgid "Processing image..."
 msgstr "이미지 처리 중..."
 
@@ -357,8 +357,8 @@ msgstr "낮음"
 
 #: src/app/(dialogs)/config.native.tsx:70
 #: src/app/(dialogs)/config.native.tsx:134
-#: src/app/(dialogs)/config.tsx:62
-#: src/app/(dialogs)/config.tsx:105
+#: src/app/(dialogs)/config.tsx:61
+#: src/app/(dialogs)/config.tsx:104
 #: src/app/(dialogs)/stats.native.tsx:25
 #: src/app/(dialogs)/stats.tsx:47
 #: src/app/(dialogs)/stats.tsx:61
@@ -370,18 +370,18 @@ msgstr "초기화"
 msgid "Reset progress?"
 msgstr "진행 상황을 초기화하시겠습니까?"
 
-#: src/app/(app)/index.tsx:142
+#: src/app/(app)/index.tsx:147
 msgid "Run Inference"
 msgstr "추론 실행"
 
 #: src/app/(dialogs)/config.native.tsx:65
 #: src/app/(dialogs)/config.native.tsx:133
-#: src/app/(dialogs)/config.tsx:57
-#: src/app/(dialogs)/config.tsx:114
+#: src/app/(dialogs)/config.tsx:56
+#: src/app/(dialogs)/config.tsx:113
 msgid "Save"
 msgstr "저장"
 
-#: src/app/models.tsx:191
+#: src/app/models.tsx:203
 msgid "Select"
 msgstr "선택"
 
@@ -418,7 +418,7 @@ msgstr "공백"
 msgid "Statistics"
 msgstr "통계"
 
-#: src/app/models.tsx:277
+#: src/app/models.tsx:291
 msgid "Storage"
 msgstr "저장공간"
 
@@ -462,7 +462,7 @@ msgstr "추적기"
 msgid "Underscore"
 msgstr "언더스코어"
 
-#: src/app/models.tsx:281
+#: src/app/models.tsx:295
 msgid "Unknown"
 msgstr "알 수 없음"
 

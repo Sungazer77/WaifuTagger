@@ -248,7 +248,7 @@ export const SettingsContent = () => {
             <PaperList.Section title={t`General`} titleStyle={{color: colors.primary}}>
                 <List>
                     <ListSwitch title={t`Auto inference`} value={autoInfer} onValueChange={(val) => updateSettings({autoInfer: val})} />
-                    <ListSwitch title={t`Copy tags to clipboard after inference`} value={copyTagsToClipboard} onValueChange={(val) => updateSettings({copyTagsToClipboard: val})} />
+                    <ListSwitch title={t`Auto copy tags`} value={copyTagsToClipboard} onValueChange={(val) => updateSettings({copyTagsToClipboard: val})} />
                     {getCurrentPlatform() === 'desktop' && (
                         <ListSwitch title={t`Monitor clipboard for images`} value={clipboardMonitor} onValueChange={(val) => updateSettings({clipboardMonitor: val})} />
                     )}

@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/app/models.tsx:291
+#: src/app/models.tsx:305
 msgid "{recVariant} is recommended for your device."
 msgstr "{recVariant} is recommended for your device."
 
@@ -34,11 +34,15 @@ msgstr "App Update"
 msgid "Artist"
 msgstr "Artist"
 
+#: src/components/content/settings.tsx:251
+msgid "Auto copy tags"
+msgstr "Auto copy tags"
+
 #: src/components/content/settings.tsx:250
 msgid "Auto inference"
 msgstr "Auto inference"
 
-#: src/app/(dialogs)/config.tsx:110
+#: src/app/(dialogs)/config.tsx:109
 #: src/components/common/alert.android.tsx:38
 msgid "Cancel"
 msgstr "Cancel"
@@ -52,7 +56,7 @@ msgstr "Categories"
 msgid "Change model"
 msgstr "Change model"
 
-#: src/app/models.tsx:261
+#: src/app/models.tsx:275
 msgid "Change model directory"
 msgstr "Change model directory"
 
@@ -84,10 +88,6 @@ msgstr "Copied to Clipboard"
 msgid "Copy"
 msgstr "Copy"
 
-#: src/components/content/settings.tsx:251
-msgid "Copy tags to clipboard after inference"
-msgstr "Copy tags to clipboard after inference"
-
 #: src/components/tagText.tsx:165
 msgid "Copy text"
 msgstr "Copy text"
@@ -108,7 +108,7 @@ msgstr "Dark mode"
 msgid "Default"
 msgstr "Default"
 
-#: src/app/models.tsx:191
+#: src/app/models.tsx:203
 msgid "Deselect"
 msgstr "Deselect"
 
@@ -118,11 +118,11 @@ msgstr "Deselect"
 msgid "Done"
 msgstr "Done"
 
-#: src/app/models.tsx:191
+#: src/app/models.tsx:203
 msgid "Download"
 msgstr "Download"
 
-#: src/utils/selector/index.tauri.ts:114
+#: src/utils/selector/index.tauri.ts:119
 msgid "Error loading URL"
 msgstr "Error loading URL"
 
@@ -215,8 +215,8 @@ msgid "Max General Tags"
 msgstr "Max General Tags"
 
 #: src/app/(dialogs)/config.native.tsx:76
-#: src/app/(dialogs)/config.tsx:67
-#: src/app/(dialogs)/config.tsx:120
+#: src/app/(dialogs)/config.tsx:66
+#: src/app/(dialogs)/config.tsx:119
 msgid "Max tags"
 msgstr "Max tags"
 
@@ -233,8 +233,8 @@ msgid "Meta"
 msgstr "Meta"
 
 #: src/app/(dialogs)/config.native.tsx:88
-#: src/app/(dialogs)/config.tsx:79
-#: src/app/(dialogs)/config.tsx:131
+#: src/app/(dialogs)/config.tsx:78
+#: src/app/(dialogs)/config.tsx:130
 msgid "Minimum thresholds"
 msgstr "Minimum thresholds"
 
@@ -250,7 +250,7 @@ msgstr "Model"
 msgid "Model is too large for this device."
 msgstr "Model is too large for this device."
 
-#: src/app/models.tsx:249
+#: src/app/models.tsx:263
 msgid "Model Manager"
 msgstr "Model Manager"
 
@@ -261,8 +261,8 @@ msgstr "Model not found!"
 
 #: src/app/(dialogs)/config.native.tsx:59
 #: src/app/(dialogs)/config.native.tsx:112
-#: src/app/(dialogs)/config.tsx:51
-#: src/app/(dialogs)/config.tsx:102
+#: src/app/(dialogs)/config.tsx:50
+#: src/app/(dialogs)/config.tsx:101
 msgid "Model Settings"
 msgstr "Model Settings"
 
@@ -290,7 +290,7 @@ msgstr "No Results"
 msgid "No update available"
 msgstr "No update available"
 
-#: src/app/models.tsx:272
+#: src/app/models.tsx:286
 msgid "Open model directory"
 msgstr "Open model directory"
 
@@ -307,7 +307,7 @@ msgstr "Paste"
 msgid "Paste Image from Clipboard"
 msgstr "Paste Image from Clipboard"
 
-#: src/app/models.tsx:256
+#: src/app/models.tsx:270
 msgid "Please download and select a model to get started!"
 msgstr "Please download and select a model to get started!"
 
@@ -323,7 +323,7 @@ msgstr "Privacy policy"
 msgid "Probability"
 msgstr "Probability"
 
-#: src/utils/selector/index.tauri.ts:123
+#: src/utils/selector/index.tauri.ts:128
 msgid "Processing image..."
 msgstr "Processing image..."
 
@@ -357,8 +357,8 @@ msgstr "Reduced"
 
 #: src/app/(dialogs)/config.native.tsx:70
 #: src/app/(dialogs)/config.native.tsx:134
-#: src/app/(dialogs)/config.tsx:62
-#: src/app/(dialogs)/config.tsx:105
+#: src/app/(dialogs)/config.tsx:61
+#: src/app/(dialogs)/config.tsx:104
 #: src/app/(dialogs)/stats.native.tsx:25
 #: src/app/(dialogs)/stats.tsx:47
 #: src/app/(dialogs)/stats.tsx:61
@@ -370,18 +370,18 @@ msgstr "Reset"
 msgid "Reset progress?"
 msgstr "Reset progress?"
 
-#: src/app/(app)/index.tsx:142
+#: src/app/(app)/index.tsx:147
 msgid "Run Inference"
 msgstr "Run Inference"
 
 #: src/app/(dialogs)/config.native.tsx:65
 #: src/app/(dialogs)/config.native.tsx:133
-#: src/app/(dialogs)/config.tsx:57
-#: src/app/(dialogs)/config.tsx:114
+#: src/app/(dialogs)/config.tsx:56
+#: src/app/(dialogs)/config.tsx:113
 msgid "Save"
 msgstr "Save"
 
-#: src/app/models.tsx:191
+#: src/app/models.tsx:203
 msgid "Select"
 msgstr "Select"
 
@@ -418,7 +418,7 @@ msgstr "Space"
 msgid "Statistics"
 msgstr "Statistics"
 
-#: src/app/models.tsx:277
+#: src/app/models.tsx:291
 msgid "Storage"
 msgstr "Storage"
 
@@ -462,7 +462,7 @@ msgstr "Trackers"
 msgid "Underscore"
 msgstr "Underscore"
 
-#: src/app/models.tsx:281
+#: src/app/models.tsx:295
 msgid "Unknown"
 msgstr "Unknown"
 

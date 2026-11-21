@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/app/models.tsx:291
+#: src/app/models.tsx:305
 msgid "{recVariant} is recommended for your device."
 msgstr "{recVariant} est recommandé pour votre appareil."
 
@@ -34,11 +34,15 @@ msgstr "Mise à jour de l'application"
 msgid "Artist"
 msgstr "Artiste"
 
+#: src/components/content/settings.tsx:251
+msgid "Auto copy tags"
+msgstr "Copier automatiquement les tags"
+
 #: src/components/content/settings.tsx:250
 msgid "Auto inference"
 msgstr "Inférence automatique"
 
-#: src/app/(dialogs)/config.tsx:110
+#: src/app/(dialogs)/config.tsx:109
 #: src/components/common/alert.android.tsx:38
 msgid "Cancel"
 msgstr "Annuler"
@@ -52,7 +56,7 @@ msgstr "Catégories"
 msgid "Change model"
 msgstr "Changer de modèle"
 
-#: src/app/models.tsx:261
+#: src/app/models.tsx:275
 msgid "Change model directory"
 msgstr "Changer le dossier du modèle"
 
@@ -84,10 +88,6 @@ msgstr "Copié dans le presse-papiers"
 msgid "Copy"
 msgstr "Copier"
 
-#: src/components/content/settings.tsx:251
-msgid "Copy tags to clipboard after inference"
-msgstr "Coller l'image du presse-papiers"
-
 #: src/components/tagText.tsx:165
 msgid "Copy text"
 msgstr "Copier le texte"
@@ -108,7 +108,7 @@ msgstr "Mode sombre"
 msgid "Default"
 msgstr "Par défaut"
 
-#: src/app/models.tsx:191
+#: src/app/models.tsx:203
 msgid "Deselect"
 msgstr "Désélectionner"
 
@@ -118,11 +118,11 @@ msgstr "Désélectionner"
 msgid "Done"
 msgstr "Terminé"
 
-#: src/app/models.tsx:191
+#: src/app/models.tsx:203
 msgid "Download"
 msgstr "Télécharger"
 
-#: src/utils/selector/index.tauri.ts:114
+#: src/utils/selector/index.tauri.ts:119
 msgid "Error loading URL"
 msgstr "Erreur de chargement de l'URL"
 
@@ -215,8 +215,8 @@ msgid "Max General Tags"
 msgstr "Tags généraux max"
 
 #: src/app/(dialogs)/config.native.tsx:76
-#: src/app/(dialogs)/config.tsx:67
-#: src/app/(dialogs)/config.tsx:120
+#: src/app/(dialogs)/config.tsx:66
+#: src/app/(dialogs)/config.tsx:119
 msgid "Max tags"
 msgstr "Tags max"
 
@@ -233,8 +233,8 @@ msgid "Meta"
 msgstr "Méta"
 
 #: src/app/(dialogs)/config.native.tsx:88
-#: src/app/(dialogs)/config.tsx:79
-#: src/app/(dialogs)/config.tsx:131
+#: src/app/(dialogs)/config.tsx:78
+#: src/app/(dialogs)/config.tsx:130
 msgid "Minimum thresholds"
 msgstr "Seuils minimaux"
 
@@ -250,7 +250,7 @@ msgstr "Modèle"
 msgid "Model is too large for this device."
 msgstr "Le modèle est trop volumineux pour cet appareil."
 
-#: src/app/models.tsx:249
+#: src/app/models.tsx:263
 msgid "Model Manager"
 msgstr "Gestionnaire de modèles"
 
@@ -261,8 +261,8 @@ msgstr "Modèle introuvable !"
 
 #: src/app/(dialogs)/config.native.tsx:59
 #: src/app/(dialogs)/config.native.tsx:112
-#: src/app/(dialogs)/config.tsx:51
-#: src/app/(dialogs)/config.tsx:102
+#: src/app/(dialogs)/config.tsx:50
+#: src/app/(dialogs)/config.tsx:101
 msgid "Model Settings"
 msgstr "Paramètres du modèle"
 
@@ -272,7 +272,7 @@ msgstr "Modèles"
 
 #: src/components/content/settings.tsx:253
 msgid "Monitor clipboard for images"
-msgstr ""
+msgstr "Surveiller le presse-papiers pour détecter des images"
 
 #: src/hooks/translations/useThemeVariantNames.ts:12
 msgid "Monochrome"
@@ -290,7 +290,7 @@ msgstr "Aucun résultat"
 msgid "No update available"
 msgstr "Aucune mise à jour disponible"
 
-#: src/app/models.tsx:272
+#: src/app/models.tsx:286
 msgid "Open model directory"
 msgstr "Ouvrir le dossier du modèle"
 
@@ -307,7 +307,7 @@ msgstr "Coller"
 msgid "Paste Image from Clipboard"
 msgstr "Coller l'image du presse-papiers"
 
-#: src/app/models.tsx:256
+#: src/app/models.tsx:270
 msgid "Please download and select a model to get started!"
 msgstr "Veuillez télécharger et sélectionner un modèle pour commencer !"
 
@@ -323,7 +323,7 @@ msgstr "Politique de confidentialité"
 msgid "Probability"
 msgstr "Probabilité"
 
-#: src/utils/selector/index.tauri.ts:123
+#: src/utils/selector/index.tauri.ts:128
 msgid "Processing image..."
 msgstr "Traitement de l'image..."
 
@@ -357,8 +357,8 @@ msgstr "Réduit"
 
 #: src/app/(dialogs)/config.native.tsx:70
 #: src/app/(dialogs)/config.native.tsx:134
-#: src/app/(dialogs)/config.tsx:62
-#: src/app/(dialogs)/config.tsx:105
+#: src/app/(dialogs)/config.tsx:61
+#: src/app/(dialogs)/config.tsx:104
 #: src/app/(dialogs)/stats.native.tsx:25
 #: src/app/(dialogs)/stats.tsx:47
 #: src/app/(dialogs)/stats.tsx:61
@@ -370,18 +370,18 @@ msgstr "Réinitialiser"
 msgid "Reset progress?"
 msgstr "Réinitialiser la progression ?"
 
-#: src/app/(app)/index.tsx:142
+#: src/app/(app)/index.tsx:147
 msgid "Run Inference"
 msgstr "Exécuter l'inférence"
 
 #: src/app/(dialogs)/config.native.tsx:65
 #: src/app/(dialogs)/config.native.tsx:133
-#: src/app/(dialogs)/config.tsx:57
-#: src/app/(dialogs)/config.tsx:114
+#: src/app/(dialogs)/config.tsx:56
+#: src/app/(dialogs)/config.tsx:113
 msgid "Save"
 msgstr "Enregistrer"
 
-#: src/app/models.tsx:191
+#: src/app/models.tsx:203
 msgid "Select"
 msgstr "Sélectionner"
 
@@ -418,7 +418,7 @@ msgstr "Espace"
 msgid "Statistics"
 msgstr "Statistiques"
 
-#: src/app/models.tsx:277
+#: src/app/models.tsx:291
 msgid "Storage"
 msgstr "Stockage"
 
@@ -462,7 +462,7 @@ msgstr "Suivis"
 msgid "Underscore"
 msgstr "Tiret bas"
 
-#: src/app/models.tsx:281
+#: src/app/models.tsx:295
 msgid "Unknown"
 msgstr "Inconnu"
 

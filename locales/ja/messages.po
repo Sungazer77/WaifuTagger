@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/app/models.tsx:291
+#: src/app/models.tsx:305
 msgid "{recVariant} is recommended for your device."
 msgstr "{recVariant} はお使いのデバイスに推奨されています。"
 
@@ -34,11 +34,15 @@ msgstr "アプリのアップデート"
 msgid "Artist"
 msgstr "絵師"
 
+#: src/components/content/settings.tsx:251
+msgid "Auto copy tags"
+msgstr "タグを自動コピー"
+
 #: src/components/content/settings.tsx:250
 msgid "Auto inference"
 msgstr "自動推論"
 
-#: src/app/(dialogs)/config.tsx:110
+#: src/app/(dialogs)/config.tsx:109
 #: src/components/common/alert.android.tsx:38
 msgid "Cancel"
 msgstr "キャンセル"
@@ -52,7 +56,7 @@ msgstr "カテゴリ"
 msgid "Change model"
 msgstr "モデルを変更"
 
-#: src/app/models.tsx:261
+#: src/app/models.tsx:275
 msgid "Change model directory"
 msgstr "モデルディレクトリを変更"
 
@@ -84,10 +88,6 @@ msgstr "クリップボードにコピーしました"
 msgid "Copy"
 msgstr "コピー"
 
-#: src/components/content/settings.tsx:251
-msgid "Copy tags to clipboard after inference"
-msgstr "推論後にタグをクリップボードにコピーする"
-
 #: src/components/tagText.tsx:165
 msgid "Copy text"
 msgstr "テキストをコピー"
@@ -108,7 +108,7 @@ msgstr "ダークモード"
 msgid "Default"
 msgstr "デフォルト"
 
-#: src/app/models.tsx:191
+#: src/app/models.tsx:203
 msgid "Deselect"
 msgstr "選択解除"
 
@@ -118,11 +118,11 @@ msgstr "選択解除"
 msgid "Done"
 msgstr "完了"
 
-#: src/app/models.tsx:191
+#: src/app/models.tsx:203
 msgid "Download"
 msgstr "ダウンロード"
 
-#: src/utils/selector/index.tauri.ts:114
+#: src/utils/selector/index.tauri.ts:119
 msgid "Error loading URL"
 msgstr "URLの読み込みエラー"
 
@@ -215,8 +215,8 @@ msgid "Max General Tags"
 msgstr "一般タグの最大数"
 
 #: src/app/(dialogs)/config.native.tsx:76
-#: src/app/(dialogs)/config.tsx:67
-#: src/app/(dialogs)/config.tsx:120
+#: src/app/(dialogs)/config.tsx:66
+#: src/app/(dialogs)/config.tsx:119
 msgid "Max tags"
 msgstr "最大タグ数"
 
@@ -233,8 +233,8 @@ msgid "Meta"
 msgstr "メタ"
 
 #: src/app/(dialogs)/config.native.tsx:88
-#: src/app/(dialogs)/config.tsx:79
-#: src/app/(dialogs)/config.tsx:131
+#: src/app/(dialogs)/config.tsx:78
+#: src/app/(dialogs)/config.tsx:130
 msgid "Minimum thresholds"
 msgstr "最小しきい値"
 
@@ -250,7 +250,7 @@ msgstr "モデル"
 msgid "Model is too large for this device."
 msgstr "モデルがこのデバイスに対して大きすぎます。"
 
-#: src/app/models.tsx:249
+#: src/app/models.tsx:263
 msgid "Model Manager"
 msgstr "モデルマネージャー"
 
@@ -261,8 +261,8 @@ msgstr "モデルが見つかりません！"
 
 #: src/app/(dialogs)/config.native.tsx:59
 #: src/app/(dialogs)/config.native.tsx:112
-#: src/app/(dialogs)/config.tsx:51
-#: src/app/(dialogs)/config.tsx:102
+#: src/app/(dialogs)/config.tsx:50
+#: src/app/(dialogs)/config.tsx:101
 msgid "Model Settings"
 msgstr "モデル設定"
 
@@ -272,7 +272,7 @@ msgstr "モデル"
 
 #: src/components/content/settings.tsx:253
 msgid "Monitor clipboard for images"
-msgstr ""
+msgstr "クリップボードの画像変更を監視"
 
 #: src/hooks/translations/useThemeVariantNames.ts:12
 msgid "Monochrome"
@@ -290,7 +290,7 @@ msgstr "結果がありません"
 msgid "No update available"
 msgstr "利用可能なアップデートはありません"
 
-#: src/app/models.tsx:272
+#: src/app/models.tsx:286
 msgid "Open model directory"
 msgstr "モデルディレクトリを開く"
 
@@ -307,7 +307,7 @@ msgstr "貼り付け"
 msgid "Paste Image from Clipboard"
 msgstr "クリップボードから画像を貼り付ける"
 
-#: src/app/models.tsx:256
+#: src/app/models.tsx:270
 msgid "Please download and select a model to get started!"
 msgstr "開始するにはモデルをダウンロードして選択してください！"
 
@@ -323,7 +323,7 @@ msgstr "プライバシーポリシー"
 msgid "Probability"
 msgstr "確率"
 
-#: src/utils/selector/index.tauri.ts:123
+#: src/utils/selector/index.tauri.ts:128
 msgid "Processing image..."
 msgstr "画像を処理中..."
 
@@ -357,8 +357,8 @@ msgstr "低"
 
 #: src/app/(dialogs)/config.native.tsx:70
 #: src/app/(dialogs)/config.native.tsx:134
-#: src/app/(dialogs)/config.tsx:62
-#: src/app/(dialogs)/config.tsx:105
+#: src/app/(dialogs)/config.tsx:61
+#: src/app/(dialogs)/config.tsx:104
 #: src/app/(dialogs)/stats.native.tsx:25
 #: src/app/(dialogs)/stats.tsx:47
 #: src/app/(dialogs)/stats.tsx:61
@@ -370,18 +370,18 @@ msgstr "リセット"
 msgid "Reset progress?"
 msgstr "進捗をリセットしますか？"
 
-#: src/app/(app)/index.tsx:142
+#: src/app/(app)/index.tsx:147
 msgid "Run Inference"
 msgstr "推論を実行"
 
 #: src/app/(dialogs)/config.native.tsx:65
 #: src/app/(dialogs)/config.native.tsx:133
-#: src/app/(dialogs)/config.tsx:57
-#: src/app/(dialogs)/config.tsx:114
+#: src/app/(dialogs)/config.tsx:56
+#: src/app/(dialogs)/config.tsx:113
 msgid "Save"
 msgstr "保存"
 
-#: src/app/models.tsx:191
+#: src/app/models.tsx:203
 msgid "Select"
 msgstr "選択"
 
@@ -418,7 +418,7 @@ msgstr "スペース"
 msgid "Statistics"
 msgstr "統計"
 
-#: src/app/models.tsx:277
+#: src/app/models.tsx:291
 msgid "Storage"
 msgstr "ストレージ"
 
@@ -462,7 +462,7 @@ msgstr "トラッカー"
 msgid "Underscore"
 msgstr "アンダースコア"
 
-#: src/app/models.tsx:281
+#: src/app/models.tsx:295
 msgid "Unknown"
 msgstr "不明"
 

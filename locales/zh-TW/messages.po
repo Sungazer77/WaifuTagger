@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/app/models.tsx:291
+#: src/app/models.tsx:305
 msgid "{recVariant} is recommended for your device."
 msgstr "建議您的裝置使用 {recVariant}。"
 
@@ -34,11 +34,15 @@ msgstr "應用程式更新"
 msgid "Artist"
 msgstr "繪師"
 
+#: src/components/content/settings.tsx:251
+msgid "Auto copy tags"
+msgstr "自動複製標籤"
+
 #: src/components/content/settings.tsx:250
 msgid "Auto inference"
 msgstr "自動推論"
 
-#: src/app/(dialogs)/config.tsx:110
+#: src/app/(dialogs)/config.tsx:109
 #: src/components/common/alert.android.tsx:38
 msgid "Cancel"
 msgstr "取消"
@@ -52,7 +56,7 @@ msgstr "分類"
 msgid "Change model"
 msgstr "變更模型"
 
-#: src/app/models.tsx:261
+#: src/app/models.tsx:275
 msgid "Change model directory"
 msgstr "變更模型目錄"
 
@@ -84,10 +88,6 @@ msgstr "已複製到剪貼簿"
 msgid "Copy"
 msgstr "複製"
 
-#: src/components/content/settings.tsx:251
-msgid "Copy tags to clipboard after inference"
-msgstr "推論完成後將標籤複製到剪貼簿"
-
 #: src/components/tagText.tsx:165
 msgid "Copy text"
 msgstr "複製文字"
@@ -108,7 +108,7 @@ msgstr "深色模式"
 msgid "Default"
 msgstr "預設"
 
-#: src/app/models.tsx:191
+#: src/app/models.tsx:203
 msgid "Deselect"
 msgstr "取消選擇"
 
@@ -118,11 +118,11 @@ msgstr "取消選擇"
 msgid "Done"
 msgstr "完成"
 
-#: src/app/models.tsx:191
+#: src/app/models.tsx:203
 msgid "Download"
 msgstr "下載"
 
-#: src/utils/selector/index.tauri.ts:114
+#: src/utils/selector/index.tauri.ts:119
 msgid "Error loading URL"
 msgstr "載入 URL 時發生錯誤"
 
@@ -215,8 +215,8 @@ msgid "Max General Tags"
 msgstr "一般標籤最大數量"
 
 #: src/app/(dialogs)/config.native.tsx:76
-#: src/app/(dialogs)/config.tsx:67
-#: src/app/(dialogs)/config.tsx:120
+#: src/app/(dialogs)/config.tsx:66
+#: src/app/(dialogs)/config.tsx:119
 msgid "Max tags"
 msgstr "最大標籤數量"
 
@@ -233,8 +233,8 @@ msgid "Meta"
 msgstr "元標籤"
 
 #: src/app/(dialogs)/config.native.tsx:88
-#: src/app/(dialogs)/config.tsx:79
-#: src/app/(dialogs)/config.tsx:131
+#: src/app/(dialogs)/config.tsx:78
+#: src/app/(dialogs)/config.tsx:130
 msgid "Minimum thresholds"
 msgstr "最低門檻"
 
@@ -250,7 +250,7 @@ msgstr "模型"
 msgid "Model is too large for this device."
 msgstr "模型對於此裝置而言過大。"
 
-#: src/app/models.tsx:249
+#: src/app/models.tsx:263
 msgid "Model Manager"
 msgstr "模型管理員"
 
@@ -261,8 +261,8 @@ msgstr "找不到模型！"
 
 #: src/app/(dialogs)/config.native.tsx:59
 #: src/app/(dialogs)/config.native.tsx:112
-#: src/app/(dialogs)/config.tsx:51
-#: src/app/(dialogs)/config.tsx:102
+#: src/app/(dialogs)/config.tsx:50
+#: src/app/(dialogs)/config.tsx:101
 msgid "Model Settings"
 msgstr "模型設定"
 
@@ -272,7 +272,7 @@ msgstr "模型"
 
 #: src/components/content/settings.tsx:253
 msgid "Monitor clipboard for images"
-msgstr ""
+msgstr "監聽剪貼簿中的影像"
 
 #: src/hooks/translations/useThemeVariantNames.ts:12
 msgid "Monochrome"
@@ -290,7 +290,7 @@ msgstr "無結果"
 msgid "No update available"
 msgstr "沒有可用的更新"
 
-#: src/app/models.tsx:272
+#: src/app/models.tsx:286
 msgid "Open model directory"
 msgstr "開啟模型目錄"
 
@@ -307,7 +307,7 @@ msgstr "貼上"
 msgid "Paste Image from Clipboard"
 msgstr "从剪贴板粘贴图片"
 
-#: src/app/models.tsx:256
+#: src/app/models.tsx:270
 msgid "Please download and select a model to get started!"
 msgstr "請下載並選擇一個模型以開始使用！"
 
@@ -323,7 +323,7 @@ msgstr "隱私權政策"
 msgid "Probability"
 msgstr "機率"
 
-#: src/utils/selector/index.tauri.ts:123
+#: src/utils/selector/index.tauri.ts:128
 msgid "Processing image..."
 msgstr "正在處理圖片..."
 
@@ -357,8 +357,8 @@ msgstr "低"
 
 #: src/app/(dialogs)/config.native.tsx:70
 #: src/app/(dialogs)/config.native.tsx:134
-#: src/app/(dialogs)/config.tsx:62
-#: src/app/(dialogs)/config.tsx:105
+#: src/app/(dialogs)/config.tsx:61
+#: src/app/(dialogs)/config.tsx:104
 #: src/app/(dialogs)/stats.native.tsx:25
 #: src/app/(dialogs)/stats.tsx:47
 #: src/app/(dialogs)/stats.tsx:61
@@ -370,18 +370,18 @@ msgstr "重設"
 msgid "Reset progress?"
 msgstr "要重設進度嗎？"
 
-#: src/app/(app)/index.tsx:142
+#: src/app/(app)/index.tsx:147
 msgid "Run Inference"
 msgstr "執行推論"
 
 #: src/app/(dialogs)/config.native.tsx:65
 #: src/app/(dialogs)/config.native.tsx:133
-#: src/app/(dialogs)/config.tsx:57
-#: src/app/(dialogs)/config.tsx:114
+#: src/app/(dialogs)/config.tsx:56
+#: src/app/(dialogs)/config.tsx:113
 msgid "Save"
 msgstr "儲存"
 
-#: src/app/models.tsx:191
+#: src/app/models.tsx:203
 msgid "Select"
 msgstr "選擇"
 
@@ -418,7 +418,7 @@ msgstr "空格"
 msgid "Statistics"
 msgstr "統計數據"
 
-#: src/app/models.tsx:277
+#: src/app/models.tsx:291
 msgid "Storage"
 msgstr "儲存空間"
 
@@ -462,7 +462,7 @@ msgstr "追蹤器"
 msgid "Underscore"
 msgstr "底線"
 
-#: src/app/models.tsx:281
+#: src/app/models.tsx:295
 msgid "Unknown"
 msgstr "未知"
 
